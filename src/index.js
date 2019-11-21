@@ -20,6 +20,7 @@ app.use((req, res, next) => {
 
 //Rotas controller
 require('./controllers/authController')(app);
+require('./controllers/projectController')(app);
 
 app.use((req, res, next) => {
     const error = new Error("Not found");
